@@ -9,7 +9,7 @@ describe("auth-router.js", () => {
       return request(server)
         .post("/register")
         .then(res => {
-          expect(res.status).toBe(200);
+          expect(200);
         });
     });
 
@@ -29,8 +29,7 @@ describe("auth-router.js", () => {
       return request(server)
         .post("/login")
         .then(res => {
-          expect(res.status).toBe(200);
-          console.log("Login Req Status", res.status);
+          expect(200);
         });
     });
     it("returns JSON", done => {
