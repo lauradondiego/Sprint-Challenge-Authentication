@@ -8,7 +8,7 @@ module.exports = {
 };
 
 function find() {
-  return db("users").select("id", "username", "password", "department");
+  return db("users").select("id", "username", "password");
   // you can take out .select entirely and it will default selecting all
   // dont forget to add department field in here after you add it from the migrations
 }
